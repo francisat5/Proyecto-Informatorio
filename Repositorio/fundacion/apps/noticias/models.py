@@ -15,7 +15,7 @@ class Noticia(models.Model):
 	cuerpo = models.TextField()
 	autor = models.CharField(max_length = 50, null=True, blank = True)
 	imagen = models.ImageField(upload_to = 'noticias', null=True, blank = True)
-	categoria = models.ForeignKey(Categoria, on_delete = models.CASCADE, null = True)
+	categoria = models.ForeignKey(Categoria, on_delete = models.CASCADE,null = True, blank = True)
 
 	def __str__(self):
 		return self.titulo
