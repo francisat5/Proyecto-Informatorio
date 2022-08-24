@@ -11,6 +11,7 @@ def Listar(request):
 	ctx = {}	
 	#BUSCAR LO QUE QUIERO EN LA BD
 	todas = Noticia.objects.all()
+	print(todas)
 	#PASARLO AL TEMPLATE
 	ctx['notis'] = todas
 

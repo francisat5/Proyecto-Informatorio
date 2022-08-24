@@ -1,7 +1,24 @@
 {%extends 'base.html'%}
 {% load static %}
-    {%block contenido%}
-    <h2>soy la vista de listar noticias</h2>
-    {%endblock contenido%}
+
+{%block contenido%}
+    <h1>NOTICIAS ACTUALES</h1>
+    <br>
+    {% for n in notis%}
+        <h2>{{n.titulo}}<h2>
+        <br>
+        <p>{{n.cuerpo}}<p>
+        <br>
+        <p>{{n.autor}}<p>
+        <br>
+        {% if n.imagen %}
+            <IMG src= {{n.imagen.url}}>
+        {% else %}
+            <p>No tiene imagen</p> 
+        {% endif %}       
+    {% endfor %}
+
+  
+{%endblock contenido%}
 
     
