@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,6 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Application definition
 AUTH_USER_MODEL = 'usuarios.Usuario' 
+LOGIN_REDIRECT_URL= reverse_lazy('home')
+LOGOUT_REDIRECT_URL= reverse_lazy('home')
 
 INSTALLED_APPS = [
     'django.contrib.admin',

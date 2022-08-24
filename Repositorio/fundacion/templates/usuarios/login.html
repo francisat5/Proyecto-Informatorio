@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{% load static %}
+      {%block contenido%}
+    <div class="login-box" > 
+		<link rel="stylesheet" href="../../static/css/login.css">
+		<img class="avatar" src="../../static/img/logo.jpg" alt="Logo de Fundación">
+		<h1>Iniciar Sesion</h1>
+		<form method="POST">{%csrf_token%}
+			{{form.errors}}
+			<input type="text" name="username" placeholder="USUARIO">
+			<input type="password" name="password" placeholder="PASSWORD">
+			<input type="submit" name="" value="ENVIAR">
+		</form>
+	</div>	
+      {%endblock contenido%}

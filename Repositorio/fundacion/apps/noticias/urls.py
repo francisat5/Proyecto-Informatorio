@@ -8,4 +8,5 @@ urlpatterns = [
     
     path('listar/', views.Listar, name = 'listar_noticias'),
 
-]
+    ]
+
