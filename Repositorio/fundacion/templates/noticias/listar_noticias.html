@@ -2,11 +2,11 @@
 {% load static %}
 
 {%block contenido%}
-    <h1>Noticias Actuales </h1>
+    <h2>Noticias Actuales </h2>
     
     {% for n in notis%}
         <br>
-        <h2>{{n.titulo}}<h2>
+        <h5>{{n.titulo}}<h5>
         
         <a href="{% url 'noticias:detalle_noticias' n.pk %}">Mas Detalles</a>
         <br>

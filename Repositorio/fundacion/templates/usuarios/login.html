@@ -1,9 +1,12 @@
-{%extends 'base.html'%}
+
 {% load static %}
-      {%block contenido%}
+    {%block contenido%}
+	<main role="main">
+		
+	<div class="container">
     <div class="login-box" > 
 		<link rel="stylesheet" href="../../static/css/login.css">
-		<img class="avatar" src="../../static/img/Logo_fundacion1png.png" alt="Logo de Fundación">
+		<img class="avatar" src="{% static 'img/Logo_fundacion1png.png' %}" alt="Logo de Fundación">
 		<h1>Iniciar Sesion</h1>
 		<form method="POST">{%csrf_token%}
 			{{form.errors}}
@@ -12,4 +15,6 @@
 			<input type="submit" name="" value="ENVIAR">
 		</form>
 	</div>	
-      {%endblock contenido%}
+	</div>
+	</main>
+    {%endblock contenido%}
