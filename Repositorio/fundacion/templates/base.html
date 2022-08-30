@@ -14,7 +14,7 @@
   <body style="background-color:aliceblue ;">
     <!--Inicio de barra de navegación-->
     <nav class="navbar navbar-expand-lg"style="background-color:#74b9ff;z-index: 300;">
-        <img src="../static/img/Logo_fundacion1png.png" style="width: 50px;  border-radius: 50%;" alt="Logo">
+        <img src="{%static 'img/Logo_fundacion1png.png' %}" style="width: 50px;  border-radius: 50%;" alt="Logo">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home' %}">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,17 +43,54 @@
       {%block contenido%}
 
       {%endblock contenido%}
-    <!-- Footer -->
-
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-    </body>
+      <br>
+      <section class="">
+        <!-- Footer -->
+        <footer class="bg-secondary text-white text-center text-md-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Nuesta Misión</h5>
+                <p>
+                  La CEBs por estar insertada en los barrios más humildes de la ciudad y en la zona rural, son una instancia misionera de la iglesia más próxima a las personas y hacen más visible la unión entre fe y vida.
+		              Las CEBs articulan el compromiso cristiano “opción por los pobres”, la lucha por la Justicia Social, los Derechos Humanos, de Género y de nuestros Pueblos Originarios, llevando adelante obras caritativas y solidarias.
+                </p>
+              </div>
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Enlaces</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://goo.gl/maps/ZFDwDubkYtScd9SY8"class="text-white">Dirección</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Link 4</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
 </html>
