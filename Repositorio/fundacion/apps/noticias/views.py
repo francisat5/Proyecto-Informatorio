@@ -17,5 +17,9 @@ def Listar(request):
 
 	return render(request,'noticias/listar_noticias.html',ctx)
 
+def Detalle_Noticia(request,pk): 
+	ctx = {} 
+	ctx['codigo'] = pk 
+	return render(request,'noticias/detalle_noticia.html',ctx)
 
 

@@ -15,7 +15,8 @@
             <IMG src= {{n.imagen.url}}>
         {% else %}
             <p>No tiene imagen</p> 
-        {% endif %}       
+        {% endif %}
+        <a href="{% url 'noticia:detalle_noticias' n.pk %}">Mas Detalles</a>       
     {% endfor %}
 
   
