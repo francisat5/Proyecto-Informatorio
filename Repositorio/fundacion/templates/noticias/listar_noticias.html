@@ -3,21 +3,16 @@
 
 {%block contenido%}
     <h1>Noticias Actuales </h1>
-    <br>
+    
     {% for n in notis%}
+        <br>
         <h2>{{n.titulo}}<h2>
+        
+        <a href="{% url 'noticias:detalle_noticias' n.pk %}">Mas Detalles</a>
         <br>
-        <p>{{n.cuerpo}}<p>
-        <br>
-        <p>{{n.autor}}<p>
-        <br>
-        {% if n.imagen %}
-            <IMG src= {{n.imagen.url}}>
-        {% else %}
-            <p>No tiene imagen</p> 
-        {% endif %}
-        <a href="{% url 'noticia:detalle_noticias' n.pk %}">Mas Detalles</a>       
+
     {% endfor %}
+    <br>
 
   
 {%endblock contenido%}
