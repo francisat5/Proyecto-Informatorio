@@ -30,6 +30,7 @@ urlpatterns = [
     path('Somos/', include('apps.somos.urls')),
     path('Noticias/', include('apps.noticias.urls')),
     path('Eventos/', include('apps.eventos.urls')),
+    path('Registrarse/', include('apps.usuarios.urls')),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
