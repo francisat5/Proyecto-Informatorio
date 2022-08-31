@@ -2,22 +2,23 @@
 {% load static %}
       {%block contenido%}
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class ="carousel-indicators">
+        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </div>
-        <div class="carousel-inner ">
-          <div class="carousel-item active">
-          <center><img src="../static/img/Fundación11.jpg"style="width: 400px; class="d-block w-50" alt="..."></center> 
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img src="{%static 'img/Fundación11.jpg'%}"style="width: 40%";class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
-           <center><img src="../static/img/Fundación_212.jpg"style="width: 400px;  class="d-block w-50" alt="..."></center> 
+          <div class="carousel-item active text-center">
+            <img src="../static/img/Fundación_212.jpg"style="width: 40%";class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
-          <center><img src="../static/img/Fundacion77_n.jpg"style="width: 400px;  class="d-block w-50" alt="..."></center> 
+          <div class="carousel-item active text-center">
+            <img src="../static/img/Fundacion77_n.jpg"style="width: 40%";class="d-block w-100" alt="...">
+          </div>
         </div>
-      </div>
-      {%endblock contenido%}
+      </div> 
+  
+{%endblock contenido%}
    
