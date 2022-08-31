@@ -11,13 +11,14 @@ from .models import Noticia, Comentario
 
 
 def Listar(request):
- 	#Creo el diccionario para pasar datos al temaplte
-	ctx = {}	
-	#BUSCAR LO QUE QUIERO EN LA BD
-	todas = Noticia.objects.all()
-	print(todas)
-	#PASARLO AL TEMPLATE
-	ctx['notis'] = todas
+	busqueda = request.GET.get("buscar",None)
+	print(busqueda)
+	if busqueda:
+		noticias = Noticia.objects.filter(titulo__icontains = busqueda)
+	else:
+		noticias = Noticia.objects.all()
+	print(noticias)
+	return render(request, 'noticias/listar_noticias.html', {'notis':noticias})
 
 	return render(request,'noticias/listar_noticias.html',ctx)
 
