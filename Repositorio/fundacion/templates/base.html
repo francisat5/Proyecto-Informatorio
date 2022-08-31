@@ -38,12 +38,12 @@
           </div>
         </div>
       </nav>
-     
-      <main id="main">
+     <br>
+   
       {%block contenido%}
 
       {%endblock contenido%}
-      </main>
+     
       <br>
      
         <!-- Footer -->
@@ -55,10 +55,13 @@
               <!--Grid column-->
               <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Nuesta Misión</h5>
+                <p>
+                  “Lo que hemos oído, lo que hemos visto con nuestros ojos. Lo que hemos mirado y nuestras manos han palpado acerca del Verbo que es Vida…lo que hemos visto y oído se lo damos a conocer” (1 Jn 1,1.3a)
+                </p>
               </div>
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">Enlaces</h5>
+                <h5 class="text-uppercase mb-0">Enlaces:</h5>
       
                 <ul class="list-unstyled">
                   <li>
@@ -67,17 +70,12 @@
                     </a>
                   </li>
                   <li>
-                    <a href="{% url 'eventos:eventos_listar'%}">Eventos</a>
+                    <a href="{% url 'eventos:eventos_listar'%}" class="text-white">Eventos</a>
                   </li>
                   <li>
                     <h6>Correo: electrónico:castellicebs19@gmail.com</h6>
                   </li>
-                  <li>
-                    <a href="#!" class="text-white">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Link 4</a>
-                  </li>
+                 
                 </ul>
               </div>
               <!--Grid column-->
