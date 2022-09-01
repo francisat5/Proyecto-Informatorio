@@ -2,13 +2,13 @@
 {% load static %}
 
 {%block contenido%}
-    <h3>Noticias: </h3>
+    <h3 style="padding-left: 12px;">Noticias: </h3>
     
     {% for n in notis%}
         <br>
-        <h5>{{n.titulo}}<h5>
+        <h5 style="padding-left: 12px;">{{n.titulo}}<h5>
         
-        <a href="{% url 'noticias:detalle_noticias' n.pk %}">Mas Detalles</a>
+        <a style="padding-left: 12px;" href="{% url 'noticias:detalle_noticias' n.pk %}">Mas Detalles</a>
         <br>
 
     {% endfor %}
