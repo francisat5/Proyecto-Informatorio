@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Noticia
+from .models import Comentario, Noticia,Categoria
 
 
-from . models import Noticia, Categoria
+
 
 
 admin.site.register(Noticia)
-
+admin.site.register(Comentario)
 admin.site.register(Categoria)
